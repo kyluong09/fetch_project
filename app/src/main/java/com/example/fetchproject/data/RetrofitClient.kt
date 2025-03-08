@@ -5,6 +5,10 @@ import com.google.gson.GsonBuilder
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
+/**
+ * Responsible for managing the Retrofit client
+ * It provides a pre-configured Retrofit instance for making API calls.
+ */
 object RetrofitClient {
     private const val BASE_URL = "https://fetch-hiring.s3.amazonaws.com"
 

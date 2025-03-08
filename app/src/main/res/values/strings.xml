@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fetch Project</string>
+    <!-- Message -->
+    <string name="message_error">We can\'t find the page you\'re looking for.</string>
+    <!-- Label -->
+    <string name="label_list_id">List ID:</string>
+    <string name="label_name">name:</string>
+
+
+</resources>

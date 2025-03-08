@@ -1,0 +1,31 @@
+# Ignore IntelliJ/Android Studio project files
+*.iml
+/.idea/
+/.idea/caches/
+/.idea/libraries/
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# Ignore Gradle & build output
+/build/
+/.gradle/
+/.externalNativeBuild/
+/.cxx/
+
+# Ignore local settings & generated files
+/local.properties
+*.log
+
+# macOS system files
+.DS_Store
+
+# Ignore emulator screenshots & captures
+/captures/
+
+# Miscellaneous
+*.keystore
+*.key
+*.jks
+/output.json

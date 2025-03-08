@@ -1,0 +1,64 @@
+[versions]
+# Library
+coreKtxVersion = "1.15.0"
+junitVersion = "4.13.2"
+junitVersionVersion = "1.2.1"
+espressoCoreVersion = "3.6.1"
+lifecycleRuntimeKtxVersion = "2.8.7"
+activityComposeVersion = "1.10.1"
+navigationVersion = "2.8.8"
+kotlinJsonVersion = "1.6.3"
+composeBomVersion = "2025.02.00"
+retrofitVersion = "2.11.0"
+koinVersion = "3.3.2"
+koinComposeVersion = "3.4.1"
+gsonConverterVersion = "2.6.2"
+gsonVersion = "2.9.0"
+# Plugin
+kotlinVersion = "1.9.25"
+agpVersion = "8.4.1"
+kotlinSerializationVersion = "1.9.25"
+
+
+
+
+[libraries]
+# Core
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtxVersion" }
+# Activity and Lifecycle
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtxVersion" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityComposeVersion" }
+# Compose
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBomVersion" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+# Google Material
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+# Navigation
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationVersion" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationVersion" }
+# DJ
+insert-koin = { group = "io.insert-koin", name = "koin-android", version.ref = "koinVersion" }
+insert-koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koinComposeVersion" }
+# Network
+squareup-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+# JSON
+jetbrains-kotlin-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinJsonVersion" }
+# Gson
+squareup-gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion" }
+
+squareup-gson-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "gsonConverterVersion" }
+# Test
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersionVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCoreVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junitVersion" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agpVersion" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
+jetbrains-kotlin-json = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinSerializationVersion" }
+
